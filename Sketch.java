@@ -1,17 +1,13 @@
 import processing.core.PApplet;
 
 public class Sketch extends PApplet {
-  /**
+ /*
   * A program that uses java processing to create a remote control
   * @author: Austin L
   */
 	
-	
-  /**
-   * Called once at the beginning of execution, put your size all in this method
-   */
+  // Sets the size of the window
   public void settings() {
-	// put your size call here
     size(600, 600);
   }
 
@@ -27,18 +23,19 @@ public class Sketch extends PApplet {
    */
   public void draw() {
 	  
-	// Create cshapes
+	  // Creates rectangle (remote control antenna)
     stroke(255);
     rect(295, 225, 30, 200);
 
+    // Creates rectangle (remote control)
     stroke(255);
     square(200, 350, 220);
     fill(0, 0, 0);
 
+    // Creates circle (remote control button)
     stroke(255);
     fill(255, 0, 0);
     ellipse(310, 460, 150, 150);
-
 
   }
 }
