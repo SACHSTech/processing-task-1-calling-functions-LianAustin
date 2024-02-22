@@ -1,6 +1,10 @@
 import processing.core.PApplet;
 
 public class Sketch extends PApplet {
+  /**
+  * A program that uses java processing to create a remote control
+  * @author: Austin L
+  */
 	
 	
   /**
@@ -8,12 +12,11 @@ public class Sketch extends PApplet {
    */
   public void settings() {
 	// put your size call here
-    size(400, 400);
+    size(600, 600);
   }
 
   /** 
-   * Called once at the beginning of execution.  Add initial set up
-   * values here i.e background, stroke, fill etc.
+   * Sets background to light green
    */
   public void setup() {
     background(210, 255, 173);
@@ -24,13 +27,18 @@ public class Sketch extends PApplet {
    */
   public void draw() {
 	  
-	// sample code, delete this stuff
-    stroke(128);
-    line(150, 25, 270, 350);  
+	// Create cshapes
+    stroke(255);
+    rect(295, 225, 30, 200);
 
     stroke(255);
-    line(50, 125, 70, 50);  
+    square(200, 350, 220);
+    fill(0, 0, 0);
+
+    stroke(255);
+    fill(255, 0, 0);
+    ellipse(310, 460, 150, 150);
+
+
   }
-  
-  // define other methods down here.
 }
